@@ -1,0 +1,231 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+:root {
+  /* Fonts */
+
+  /* --nav-font: "Kumbh Sans", sans-serif; */
+  --sans-serif: "Kumbh Sans", sans-serif;
+
+  /* color */
+  --primary: #ed6c5b;
+  --secondary: #0a5b64;
+  --background: #fff5f4;
+  /* --light: #ffffff; */
+  /* --light-alt: #ecfffd; */
+  /* --dark: #3a3a3a; */
+  --dark-alt: #6e6e6e;
+  --black: #000000;
+  --white: #ffffff;
+  --grey: #d7dadc;
+  --button-shadow: 0px 0px 2px 0px #ba9ad3;
+  --light-grey: #f7f2ec;
+
+  /* Shadow */
+  --shadow: 0px 4px 20px 0px #ccc7ff;
+}
+
+/* Default */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-color: var(--primary) transparent;
+  scrollbar-width: thin;
+}
+*::selection {
+  background: var(--secondary);
+  color: var(--white);
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--dark);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--sans-serif);
+  background: var(--white);
+  overflow-x: hidden;
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+b,
+i,
+u,
+ul,
+ol,
+li,
+span {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+img,
+video {
+  width: 100%;
+}
+p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--dark-alt);
+  line-height: 170%;
+  font-family: var(--sans-serif);
+}
+p a {
+  color: var(--primary);
+  transition: 0.5s ease all;
+}
+p a:hover {
+  color: var(--secondary);
+}
+
+/* Background */
+
+/* Color */
+
+/* Section */
+.section {
+  width: 100%;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  background: var(--background);
+}
+.section .container,
+.section .container-fluid {
+  position: relative;
+  z-index: 2;
+}
+.container {
+  max-width: 1280px;
+}
+.container-900 {
+  max-width: 980px;
+}
+/* Button */
+.button {
+  padding: 8px 20px;
+  background: var(--primary);
+  color: var(--white);
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border: 0;
+  border-radius: 30px;
+}
+.button span {
+  color: var(--light);
+}
+.button-alt {
+  background: transparent;
+  color: var(--light);
+  display: inline-block;
+}
+.button-alt span {
+  color: var(--secondary);
+}
+
+/* Headings */
+.heading-box {
+  position: relative;
+}
+
+.heading {
+  font-size: 45px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: var(--secondary);
+  font-family: var(--heading-font);
+}
+.heading span {
+  color: var(--primary);
+}
+
+.sub-heading {
+  font-size: 18px;
+  font-family: var(--sans-serif);
+  color: var(--secondary);
+  position: relative;
+  text-transform: capitalize;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mini-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.inner-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--secondary);
+}
+
+.heading-text-content {
+  padding: 0 40px;
+}
+
+.text-content .read-more {
+  color: var(--primary);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 3.38px;
+  font-family: var(--sub-heading-font);
+  font-weight: 800;
+}
+h1,
+h1 span {
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: var(--black);
+  line-height: 90px;
+}
+h2 {
+  font-size: 37px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #000;
+}
+h3 {
+  font-size: 22px;
+}
+h6 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.white-text h2,
+.white-text h6 {
+  color: var(--white);
+}
+.owl-carousel {
+  display: block !important;
+}
